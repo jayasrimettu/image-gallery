@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="filter-buttons">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('people')">People</button>
+</div>
+
+<div class="gallery">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.SptaL7QSkedyWmsmxDS6VQHaE8&pid=Api&P=0&h=180.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.QuL_dLQ9lAGJM3J2mmKTHgHaE-&pid=Api&P=0&h=180.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.OxZjm5-znolfRoqoGKj_8QHaE8&pid=Api&P=0&h=180.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.jHvTOSF7924Ah63W7mozxQHaEo&pid=Api&P=0&h=180.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.Xg7f46zoRkfC7v0nrPzNpQHaLH&pid=Api&P=0&h=180.jpg" class="gallery-item people" onclick="openLightbox(this)">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.EfKuvd8N9o-aNDIH2JF7aAHaE8&pid=Api&P=0&h=180.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.QRgtrfaKBrxFq89kH-xEjwHaLH&pid=Api&P=0&h=180.jpg" class="gallery-item people" onclick="openLightbox(this)">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.f6yAKF0FAmzCfV_RLOa9BAHaEn&pid=Api&P=0&h=180.jpg" class="gallery-item nature" onclick="openLightbox(this)">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.V9iXltx1clzcJoLQFKnBIAHaEH&pid=Api&P=0&h=180.jpg" class="gallery-item people" onclick="openLightbox(this)">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.QWh8mKMxQkF6NNvgQ8XxLgHaEK&pid=Api&P=0&h=180.jpg" class="gallery-item people" onclick="openLightbox(this)">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.Z9PggqnVR0kyMqvox2x_7wHaJY&pid=Api&P=0&h=180.jpg" class="gallery-item people" onclick="openLightbox(this)">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.WtO8AK8R8xyybFKHqHUyXQHaJ3&pid=Api&P=0&h=180.jpg" class="gallery-item people" onclick="openLightbox(this)">
+
+
+
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <a class="prev" onclick="changeSlide(-1)">❮</a>
+  <a class="next" onclick="changeSlide(1)">❯</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
